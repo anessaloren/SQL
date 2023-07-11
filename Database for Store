@@ -1,0 +1,9 @@
+CREATE TABLE store (id INTEGER PRIMARY KEY, name TEXT, quantity INTEGER, price INTEGER);
+INSERT INTO store VALUES (1, "nike shoes", 5, 25);
+INSERT INTO store VALUES (2, "converse shoes", 5, 40);
+INSERT INTO store VALUES (3, "adidas shoes", 6, 70);
+INSERT INTO store VALUES (4, "puma shoes", 2, 60);
+INSERT INTO store VALUES (5, "vans shoes", 5, 40);
+SELECT * FROM store;
+SELECT * FROM store WHERE quantity > 2 ORDER BY quantity;
+SELECT SUM(price) FROM store;
